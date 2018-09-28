@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "seledict",
+  "version": "0.1.0",
+  "description": "Save the stuff I selected on web.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background-script.js"
+    ]
+  }
+}
